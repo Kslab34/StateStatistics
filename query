@@ -1,0 +1,33 @@
+//largest population
+select population
+from statestats
+order by population;
+
+//Lowest pop excluding DC
+select min(population)
+from statestats
+where not Abbr='DC';
+
+//closest average population size
+
+//Largest land size sq miles
+select max(TotalSqMiles)
+from statestats
+
+//State with smallest land size excluding DC
+select min(TotalSqMiles)
+from statestats
+where not Abbr = 'DC';
+
+//Watermiles
+
+
+//Sum of population
+select sum(Population) TotalPopulation
+from statestats;
+
+//Total US land size in sq miles
+select sum(LandSqMiles) TotalPopulation
+from statestats;
+
+
